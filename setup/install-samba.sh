@@ -14,7 +14,7 @@ dns proxy = no
 
 
 [secured]
-path = /azuriaserver
+path = /genshinserver
 valid users = @smbgrp
 guest ok = no
 writable = yes
@@ -24,5 +24,7 @@ EOF
 addgroup smbgrp
 adduser genshin -G smbgrp
 smbpasswd -a genshin
+
+mkdir -p genshinserver
 
 service smbd restart
