@@ -7,7 +7,7 @@ security = user
 map to guest = bad user
 dns proxy = no
 [secured]
-path = /genshinserver
+path = $HOME/genshinserver
 valid users = @smbgrp
 guest ok = no
 writable = yes
