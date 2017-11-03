@@ -1,5 +1,5 @@
 #!/bin/sh
-cat > "/etc/samba/smb.conf <<EOF
+cat > /etc/samba/smb.conf <<EOF
 [global]workgroup = WORKGROUP
 server string = Samba Server %v
 netbios name = ubuntu
@@ -13,4 +13,4 @@ guest ok = no
 writable = yes
 browsable = yes
 
-EOF"
+EOF
