@@ -1,5 +1,5 @@
 addgroup smbgrp
 adduser genshin -G smbgrp
 smbpasswd -a genshin
-mkdir -p genshinserver
+mkdir -p $HOME/genshinserver
 service smbd restart
